@@ -1,0 +1,132 @@
+body {
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-minimalistic-cat-claws-seamless-background-design-backgroundpinkcat-clawseamless-backgroundbanner-image_57663.jpg);
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+
+
+}
+
+
+header {
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(163 35 35 / 84%);
+  color: rgb(255, 255, 255);
+}
+
+.addFormBtn {
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  background: azure;
+  color: black;
+  padding: 8px 16px;
+  font-size: 16px;
+
+}
+
+.sectionCatCard {
+  display: flex;
+  justify-content: space-around;
+  min-height: calc(100vh - 170px);
+
+}
+
+.containerCat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  border: 2px black solid;
+  border-radius: 5%;
+  margin: 20px 20px 20px 20px;
+  background-color: azure;
+}
+
+img {
+  width: 60%
+}
+
+.popUpForm {
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  height: 300px;
+  width: 300px;
+  padding: 20px 20px 20px 20px;
+  border: 2px black solid;
+  border-radius: 5%;
+
+}
+
+.formChange {
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  height: 300px;
+  width: 300px;
+  padding: 20px 20px 20px 20px;
+
+  border: 2px black solid;
+  border-radius: 5%;
+}
+
+.popUp {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(1px);
+  background-color: rgba(192, 192, 192, 0.80);
+  padding-top: 100px;
+
+}
+
+.closeForm {
+  position: absolute;
+  left: 200px;
+
+}
+
+.viewCatCard {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.cat-text {
+
+  background-color: azure;
+  height: 500px;
+  width: 400px;
+  padding: 20px 20px 20px 20px;
+
+  border: 2px black solid;
+  border-radius: 5%;
+}
+
+.active {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer {
+  height: 80px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

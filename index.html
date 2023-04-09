@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="/api.js" defer></script>
+  <script src="/index.js" defer></script>
+  <script src="/generateCatCard.js"></script>
+  <script src="/addForm.js" defer></script>
+  <script src="/localStore.js" defer></script>
+  <script src="/generateViewCatCard.js" defer></script>
+  <script src="/changeCatCard.js" defer></script>
 </head>
+
 <body>
-  <div>TEST</div>
-  
-  <script src="/api.js"></script>
+  <header>
+    <H4>Коты Макса</H4>
+    <button class="addFormBtn">Добавить кота</button>
+  </header>
+  <section class="sectionCatCard">
+  </section>
+  <div class="popUp">
+    <button class="closeFormBtn">X</button>
+    <form class="form" action="">
+      <h2>Добавить кота</h2>
+      <input type="text" name="name" required placeholder="Имя" />
+      <input type="number" name="age"  placeholder="Возраст" />
+      <input type="number" name="rate"  placeholder="Рейтинг (0-10)" min="0" max="10" />
+      <input type="text" name="image" placeholder="Ссылка на фото" />
+      <textarea name="description" placeholder="Описание котика"></textarea>
+      <button type="reset">Очичтить форму</button>
+      <button type="submit" class="submitBtn">Добавить котика</button>
+    </form>
+  </div>
+
+ <footer class="footer">
+  <div>@2023</div>
+  <div>Made by MaximProdantsov</div>
+ </footer>
 </body>
+
 </html>
