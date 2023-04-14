@@ -28,9 +28,9 @@ const openCatCardPopup = (cat) => {
   });
 };
 
-const openCatCardChange = () => {
+const openCatCardChange = (cat) => {
   const content = document.querySelector('.sectionCatCard');
-  content.innerHTML = changeCatCard2();
+  content.innerHTML = changeCatCard2(cat);
 
   let catPopup = document.querySelector('.viewCatCard');
   let closeCatPopup = document.querySelector('.closeFormBtn');
@@ -83,8 +83,8 @@ document
 
         break;
       case 'btnChange':
-        openCatCardChange()
         getIdCat(event.target.value).then((res)=>{
+          openCatCardChange(res)
           updateCatFromForm(res)
 
         })

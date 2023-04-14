@@ -41,7 +41,7 @@ updateCat = (newCat) => {
     },
     body: JSON.stringify(newCat),
   }).then((res) => {
-    return res.ok ? res.json() : console.error('кот не обновлен');
+    return res.ok ? res.json() :  console.error('кот не обновлен');
   });
 };
 

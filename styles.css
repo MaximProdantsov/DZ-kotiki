@@ -19,6 +19,13 @@ header {
 
 button {
   cursor: pointer;
+  border: 2px black solid;
+  border-radius: 5px;
+  margin: 2px 10px;
+  background: #94d4d4;
+  color: black;
+  padding: 8px 16px;
+  font-size: 16px;
 }
 
 .addFormBtn {
@@ -64,7 +71,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: azure;
-  height: 300px;
+  height: 400px;
   width: 300px;
   padding: 20px 20px 20px 20px;
   border: 2px black solid;
@@ -77,7 +84,7 @@ img {
   flex-direction: column;
   background-color: azure;
   height: 300px;
-  width: 300px;
+  width: 500px;
   padding: 20px 20px 20px 20px;
 
   border: 2px black solid;
@@ -135,4 +142,23 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+input {
+  
+  outline:none;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  margin: 3px
+}
+
+textarea{
+  outline:none;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  margin: 3px
 }
